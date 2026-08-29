@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #F9FAFB;
+    --secondry-color: #94A3B8;
+    --card:#111827;
+    --mode:#0B0F19;
+    --accent: #6366F1;
+    --hover:#4F46E5;
+    --hover2:#818CF8;
+    --border:#1E293B;
+    --shadow:rgba(0,0,0,0.5);
+}
+.light {
+    --primary-color: #0F172A;
+    --secondry-color: #64748B;
+    --mode:#F8FAFC;
+    --card:#FFFFFF;
+    --accent:#4F46E5;
+    --hover: #4338CA;
+    --border:#E2E8F0;
+    --shadow:rgba(15,23,42,0.08);
+}
+
+body {
+    background-color:var(--mode) ;
+}
