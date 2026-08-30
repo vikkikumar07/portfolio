@@ -59,7 +59,7 @@ html {
     scroll-behavior: smooth;
 }
 section {
-    margin-block:80px ;
+    margin-block:100px ;
     padding-inline: 30px;
 }
 .hero-section {
@@ -106,6 +106,7 @@ section {
     box-shadow:none ;
     border: 1px solid var(--c-bg);
 }
+
 /* ============ nav-section ============ */
 .navbar{
     width: 100%;
@@ -167,7 +168,7 @@ section {
         order: 2;
     }
     section {
-        margin-block:60px ;
+        margin-block:80px ;
         padding-inline:20px ;
     }
     .nav-item {
@@ -193,6 +194,7 @@ section {
     font-weight: 600;
 }
 .hero-section .title .heading {
+    background-color: var(--mode);
     text-align: center;
 }
 .hero-section .title .heading span {
@@ -278,6 +280,7 @@ section {
 
 /* ============ about-section ============ */
 .about-section .contaner {
+    background-color: var(--mode);
     margin-top: 20px;
     font-size: 14px;
     line-height: 1.3;
@@ -296,6 +299,7 @@ section {
 }
 
 .about-section .Info {
+    background-color: var(--mode);
     margin-block: 5px;
 }
 .about-section .card {
@@ -376,14 +380,16 @@ section {
 }
 
 .skills-section .contaner .box{
+    background-color: var(--card);
     margin-block: 15px;
-    width: 60%;
+    width: 80%;
     cursor: pointer;
 }
 .skills-section .contaner fieldset {
     border: 2px solid var(--accent);
     border-radius: 10px;
     color: var(--c-bg);
+    background-color: var(--card);
 }
 
 .skills-section .contaner fieldset:hover {
@@ -394,11 +400,13 @@ section {
     margin-inline:5px ;
 }
 .skills-section .contaner fieldset div {
+    border-radius: 10px;
+    background-color: var(--card);
     padding: 10px;
 }
 .skills-section .contaner fieldset div span{
     display: inline-block;
-    padding: 6px 12px;
+    padding: 8px 16px;
     margin: 5px;
     border-radius: 10px;
     color: var(--secondry-color);
