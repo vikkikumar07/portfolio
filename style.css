@@ -44,7 +44,7 @@ html {
 section {
     margin-block:40px ;
     padding-inline: 20px;
-    height: 130vh;
+    height: 120vh;
 }
 .text-color {
     color: var(--accent);
@@ -118,6 +118,9 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
+.hero-section .title {
+    margin-top: 20px;
+}
 .hero-section .title .name {
     font-size: 30px;
     padding-left: 20px;
@@ -189,7 +192,7 @@ section {
     }
     .hero-section .profile-img {
         order: 1;
-        height: 300px;
+        height: 250px;
     }
     .hero-section .title {
         order: 2;
