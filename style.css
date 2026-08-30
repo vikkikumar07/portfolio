@@ -44,7 +44,10 @@ html {
 section {
     margin-block:40px ;
     padding-inline: 20px;
-    height: 120vh;
+    height: 100vh;
+}
+.hero-section {
+    padding-inline: 20px;
 }
 .text-color {
     color: var(--accent);
