@@ -38,6 +38,23 @@ body {
     font-family: "serif",Georgia,Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--c-bg), var(--btn-background));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, var(--c-bg), var(--btn-background));
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -81,9 +98,13 @@ section {
     gap: 40px;
     cursor: pointer;
 }
-.card-one:hover , .card-two:hover {
+.card {
+    box-shadow: 0 0 5px var(--hover);
+}
+.card:hover {
     transform: scale(1.1);
-    border: 1px solid var(--accent);
+    box-shadow:none ;
+    border: 1px solid var(--c-bg);
 }
 /* ============ nav-section ============ */
 .navbar{
@@ -98,6 +119,7 @@ section {
     font-weight: 500;
     position:fixed;
     top: 0;
+    box-shadow: 0 0 5px var(--accent);
 }
 .navbar .title {
     font-size: 18px;
@@ -137,10 +159,10 @@ section {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    .card-one {
+    .card {
         order: 1;
     }
-    .card-two {
+    .card {
         order: 2;
     }
     section {
@@ -181,6 +203,7 @@ section {
     border: 2px solid var(--accent);
     color: var(--accent);
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 .hero-section .title .role {
     padding-left: 20px;
@@ -270,7 +293,7 @@ section {
 .about-section .Info {
     margin-block: 5px;
 }
-.about-section .card-one, .card-two {
+.about-section .card {
     height: 80px;
     width: 50%;
     padding: 8px 13px;
@@ -278,11 +301,7 @@ section {
     background-color: var(--card);
     border-radius: 10px;
 }
-.about-section .card-two p {
-    font-size: 25px;
-    color: var(--c-bg);
-}
-.about-section .card-one p {
+.about-section .card p {
     font-size: 25px;
     color: var(--c-bg);
 }
