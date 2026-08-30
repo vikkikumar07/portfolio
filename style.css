@@ -15,6 +15,10 @@
     --border:#1E293B;
     --shadow:rgba(0,0,0,0.5);
     --mode-i:#F8FAFC;
+    --btn-background:#6C63FF;
+    --btn-background2:#7C3AED;
+    --btn-hover:#5B4BFF;
+    --multi-bg: liner-gradient(135deg, #4F46E5,rgb(206, 25, 149));
 }
 .light {
     --primary-color: #0F172A;
@@ -23,7 +27,7 @@
     --card:#FFFFFF;
     --accent:#4F46E5;
     --hover: #4338CA;
-    --border:#E2E8F0;
+    --border:#64748B;
     --shadow:rgba(15,23,42,0.08);
     --mode-i:#0B0F19;
 }
@@ -40,7 +44,18 @@ html {
 section {
     margin-block:40px ;
     padding-inline: 20px;
-    height: 1vh;
+    height: 130vh;
+}
+.text-color {
+    color: var(--accent);
+}
+.card-hover:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.btn-secondry:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--accent);
 }
 /* ============ nav-section ============ */
 .navbar{
@@ -96,5 +111,87 @@ section {
 
 /* ============ hero-section ============ */
 .hero-section {
-    margin-top: 70px;
+    margin-top: 100px;
+}
+.hero-section .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.hero-section .title .name {
+    font-size: 30px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+.hero-section .title .heading {
+    text-align: center;
+}
+.hero-section .title .heading span {
+    font-size: 16px;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(79, 70, 229, 0.1);
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    border-radius: 10px;
+}
+.hero-section .title .role {
+    padding-left: 20px;
+    font-size: 16px;
+    color: var(--secondry-color);
+}
+.hero-section .title .role span {
+    display: inline-block;
+    padding-block:3px;
+    color: var(--primary-color);
+}
+.hero-section .profile-img {
+    height: 400px;
+    text-align: center;
+}
+.hero-section .profile-img img {
+    height: 300px;
+    border-radius:10px ;
+    border: 2px solid var(--accent);
+    background-image:cover;
+}
+.hero-section .title .btn {
+    margin-block:10px ;
+    padding-left: 20px;
+}
+.hero-section .title .profileBtn {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    width: 80%;
+    text-align: start;
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 2px solid var(--border);
+}
+.hero-section .title #view-projectBtn {
+  background: linear-gradient(to right, var(--btn-background2), var(--btn-background)); 
+  border: none;
+}
+
+@media (max-width:600px) {
+    .hero-section .title div {
+        font-size: 25px;
+    }
+    .hero-section .main{
+        grid-template-columns: 1fr;
+        flex-direction:row-reverse ;
+        gap: 40px;
+    }
+    .hero-section .profile-img {
+        order: 1;
+        height: 300px;
+    }
+    .hero-section .title {
+        order: 2;
+    }
 }
