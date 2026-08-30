@@ -428,6 +428,167 @@ section {
     }
     .skills-section .contaner .box{
         margin-block: 15px;
-        width: 90%;
+        width: 100%;
     }
+}
+
+/* ============ Experences-section ============ */
+.experence-section .contaner {
+    background-color: var(--mode);
+    margin-block:20px ;
+    border-radius: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.experence-section .contaner .card-e {
+    background-color: var(--card);
+    border-radius: 10px;
+    padding:10px;
+    box-shadow: 0 0 5px var(--accent);
+    width: 100%;
+}
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+.experence-section .contaner .card-e .flex-box  p{
+    color:var(--c-bg) ;
+}
+.experence-section .contaner .card-e .flex-box span {
+    font-size: 13px;
+}
+.experence-section .contaner .card-e .box2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.experence-section .contaner .card-e .info-e{
+    padding-inline:20px ;
+    padding-block: 10px;
+}
+.experence-section .contaner .card-e .info-e li{
+    font-size: 13px;
+    color: var(--secondry-color);
+}
+@media(max-width:600px) {
+    .experence-section .contaner {
+        grid-template-columns: 1fr;
+        gap: 10px;   
+    }
+    .experence-section .contaner .card-e{
+        margin-block:10px;
+        width: 100%;
+    }
+}
+
+
+/* ============ Project-section ============ */
+.project-section .contaner {
+    background-color: var(--mode);
+    margin-block:20px ;
+    border-radius: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.project-section .contaner .card-e {
+    background-color: var(--card);
+    border-radius: 10px;
+    padding:10px;
+    box-shadow: 0 0 5px var(--accent);
+    width: 100%;
+}
+
+.project-section .contaner .card-e .flex-box p{
+    color:var(--c-bg);
+}
+.project-section .contaner .card-e .flex-box span {
+    font-size: 13px;
+}
+.project-section .contaner .card-e .box2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.project-section .contaner .card-e .info-e{
+    padding-inline:20px ;
+    padding-block: 10px;
+}
+.project-section .contaner .card-e .info-e li{
+    font-size: 13px;
+    color: var(--secondry-color);
+}
+@media(max-width:600px) {
+    .project-section .contaner {
+        grid-template-columns: 1fr;
+        gap: 10px;   
+    }
+    .project-section .contaner .card-e{
+        margin-block:10px;
+        width: 100%;
+    }
+}
+
+/* ============ getintouch-section ============ */
+.contect-section .contaner {
+    background-color: var(--mode);
+    margin-block:20px ;
+    border-radius: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.contect-section .contaner .box3 div{
+    background-color: var(--card);
+    border-radius: 10px;
+    padding: 10px;
+    margin-block:10px ;
+    box-shadow: 0 0 3px var(--accent);
+}
+
+.contect-section .contaner .box3 div:hover {
+    border: 1px solid var(--c-bg);
+    box-shadow: none;
+}
+.contect-section .contaner .box3 div i {
+    color: var(--c-bg);
+    font-weight: 600;
+    font-size: 20px;
+}
+.contect-section .contaner .box3 div a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--secondry-color);
+}
+
+.contect-section .contaner .box4 {
+    background-color: var(--card);
+}
+@media(max-width:600px) {
+    .contect-section .contaner {
+        grid-template-columns: 1fr;
+        gap: 10px;   
+    }
+    .contect-section .contaner .box3{
+        margin-block:10px;
+        width: 100%;
+    }
+    .contect-section .contaner .box4{
+        margin-block:10px;
+        width: 100%;
+    }
+}
+
+/* ============ footer-section ============ */
+footer div {
+    height: 130px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--secondry-color);
+    background-color: var(--card);
 }
