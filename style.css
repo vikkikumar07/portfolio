@@ -42,9 +42,8 @@ html {
     scroll-behavior: smooth;
 }
 section {
-    margin-block:40px ;
-    padding-inline: 20px;
-    height: 100vh;
+    margin-block:60px ;
+    padding-inline: 30px;
 }
 .hero-section {
     padding-inline: 20px;
@@ -107,6 +106,10 @@ section {
     cursor: pointer;
 }
 @media (max-width: 600px){
+    section {
+        margin-block:40px ;
+        padding-inline:20px ;
+    }
     .nav-item {
         display: none;
     }
@@ -158,10 +161,14 @@ section {
     justify-content: center;
     align-items: center;
 }
+.hero-section .profile-img .image-box {
+    padding: 3px;
+    border-radius:10px ;
+    border-left: 2px solid var(--accent);
+}
 .hero-section .profile-img img {
     height: 300px;
     border-radius:10px ;
-    border: 2px solid var(--accent);
     object-fit: cover;
 }
 .hero-section .title .btn {
