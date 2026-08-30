@@ -18,7 +18,7 @@
     --btn-background:#6C63FF;
     --btn-background2:#7C3AED;
     --btn-hover:#5B4BFF;
-    --multi-bg: liner-gradient(135deg, #4F46E5,rgb(206, 25, 149));
+    --c-bg:#d51357;
 }
 .light {
     --primary-color: #0F172A;
@@ -58,6 +58,32 @@ section {
 .btn-secondry:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px var(--accent);
+}
+.heading-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.heading-title p{
+   margin-block: 5px;
+   color: var(--c-bg);
+}
+.heading-title .line {
+    width: 50px;
+    height: 4px;
+    margin-block:2px ;
+   background: linear-gradient(to right, var(--c-bg), var(--btn-background)); 
+}
+
+.flex-card {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    cursor: pointer;
+}
+.card-one:hover , .card-two:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--accent);
 }
 /* ============ nav-section ============ */
 .navbar{
@@ -106,8 +132,19 @@ section {
     cursor: pointer;
 }
 @media (max-width: 600px){
+    .flex-card {
+        display: flex;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .card-one {
+        order: 1;
+    }
+    .card-two {
+        order: 2;
+    }
     section {
-        margin-block:40px ;
+        margin-block:50px ;
         padding-inline:20px ;
     }
     .nav-item {
@@ -189,7 +226,7 @@ section {
     border: 2px solid var(--border);
 }
 .hero-section .title #view-projectBtn {
-  background: linear-gradient(to right, var(--btn-background2), var(--btn-background)); 
+  background: linear-gradient(to right, var(--c-bg), var(--btn-background)); 
   border: none;
 }
 
@@ -209,4 +246,43 @@ section {
     .hero-section .title {
         order: 2;
     }
+}
+
+/* ============ about-section ============ */
+.about-section .contaner {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.about-section .contaner h4 {
+    margin-top:5px ;
+}
+.about-section .contaner span {
+    display: inline-block;
+    margin-block: 5px;
+    color: var(--primary-color);
+}
+.about-section .contaner p{
+    color: var(--secondry-color);
+}
+
+.about-section .Info {
+    margin-block: 5px;
+}
+.about-section .card-one, .card-two {
+    height: 80px;
+    width: 50%;
+    padding: 8px 13px;
+    text-align: center;
+    background-color: var(--card);
+    border-radius: 10px;
+}
+.about-section .card-two p {
+    font-size: 25px;
+    color: var(--c-bg);
+}
+.about-section .card-one p {
+    font-size: 25px;
+    color: var(--c-bg);
 }
