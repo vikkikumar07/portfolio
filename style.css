@@ -120,6 +120,7 @@ section {
     position:fixed;
     top: 0;
     box-shadow: 0 0 5px var(--accent);
+    z-index: 1000;
 }
 .navbar .title {
     font-size: 18px;
@@ -251,6 +252,10 @@ section {
 .hero-section .title #view-projectBtn {
   background: linear-gradient(to right, var(--c-bg), var(--btn-background)); 
   border: none;
+}
+
+#resumeBtn {
+    background-color: rgba(79, 70, 229, 0.1);
 }
 
 @media (max-width:600px) {
