@@ -154,13 +154,15 @@ section {
 }
 .hero-section .profile-img {
     height: 400px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hero-section .profile-img img {
     height: 300px;
     border-radius:10px ;
     border: 2px solid var(--accent);
-    background-image:cover;
+    object-fit: cover;
 }
 .hero-section .title .btn {
     margin-block:10px ;
