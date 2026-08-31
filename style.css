@@ -291,14 +291,25 @@ section {
     margin-top:5px ;
 }
 .about-section .contaner span {
+    width: 65%;
     display: inline-block;
     margin-block: 5px;
     color: var(--primary-color);
     text-align: justify;
 }
-.about-section .contaner p{
+.about-section .contaner #paragraph{
+    width: 65%;
     color: var(--secondry-color);
     text-align: justify;
+}
+@media(max-width:600px) {
+    .about-section .contaner span {
+        width: 100%;
+    
+    }
+    .about-section .contaner #paragraph{
+        width: 100%;
+    }
 }
 
 .about-section .Info {
@@ -314,6 +325,7 @@ section {
     border-radius: 10px;
 }
 .about-section .card p {
+    align-items: center;
     font-size: 25px;
     color: var(--c-bg);
 }
