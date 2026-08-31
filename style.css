@@ -89,7 +89,7 @@ section {
     width: 50px;
     height: 4px;
     margin-block:2px ;
-   background: linear-gradient(to right, var(--c-bg), var(--btn-background)); 
+    background: linear-gradient(to right, var(--c-bg), var(--btn-background)); 
 }
 
 .flex-card {
@@ -320,7 +320,7 @@ section {
     height: auto;
 }
 .education {
-    margin-block:10px ;
+    margin-block:20px ;
     display: flex;
 }
 .education .line-box {
@@ -584,6 +584,10 @@ section {
     padding: 10px;
     box-shadow: 0 0 3px var(--accent);
 }
+.contect-section .contaner .box4 input:focus {
+    border-color: var(--c-bg);
+    outline: none;
+}
 .contect-section .contaner .box4 input:hover {
     border: 2px solid var(--c-bg);
     box-shadow: none;
@@ -598,6 +602,10 @@ section {
 .contect-section .contaner .box4 textarea:hover {
     border: 2px solid var(--c-bg);
     box-shadow: none;
+}
+.contect-section .contaner .box4 textarea:focus {
+    border-color: var(--c-bg);
+    outline: none;
 }
 .contect-section .contaner .box4 button {
     width: 100%;
