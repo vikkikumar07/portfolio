@@ -335,7 +335,7 @@ section {
 }
 .education .line-box .line {
     width: 3px;
-    height: 100%;
+    height: 120%;
     margin-left: 3px;
     background-color: var(--accent);
 }
