@@ -294,9 +294,11 @@ section {
     display: inline-block;
     margin-block: 5px;
     color: var(--primary-color);
+    text-align: justify;
 }
 .about-section .contaner p{
     color: var(--secondry-color);
+    text-align: justify;
 }
 
 .about-section .Info {
@@ -476,6 +478,7 @@ section {
 .experence-section .contaner .card-e .info-e p{
     font-size: 14px;
     color: var(--secondry-color);
+    text-align: justify;
 }
 .experence-section .contaner .card-e .info-e div{
    display: flex;
