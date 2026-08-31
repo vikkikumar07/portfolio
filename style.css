@@ -464,13 +464,42 @@ section {
     font-size: 16px;
     font-weight: 600;
 }
+.experence-section .contaner .card-e .box2 h5{
+    font-size: 13px;
+    line-height: 2.5;
+}
 .experence-section .contaner .card-e .info-e{
     padding-inline:20px ;
     padding-block: 10px;
 }
-.experence-section .contaner .card-e .info-e li{
-    font-size: 13px;
+.experence-section .contaner .card-e .info-e p{
+    font-size: 14px;
+    letter-spacing: 1.1px;
     color: var(--secondry-color);
+}
+.experence-section .contaner .card-e .info-e div{
+   display: flex;
+   gap: 10px;
+   margin-block:10px;
+}
+.experence-section .contaner .card-e .info-e div span{
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: var(--secondry-color);
+    background: rgba(35, 22, 219, 0.15);
+}
+.experence-section .contaner .card-e .links {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+.experence-section .contaner .card-e .links a {
+    text-decoration: none;
+    color: var(--hover);
+    font-size: 13px;
+    font-weight: 600;
 }
 @media(max-width:600px) {
     .experence-section .contaner {
