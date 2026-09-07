@@ -589,28 +589,32 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-.contect-section .contaner .box3 div{
+.contect-section .contaner .box3  a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--secondry-color);
+    cursor: pointer;
+}
+.contect-section .contaner .box3 a div{
     background-color: var(--card);
     border-radius: 10px;
     padding: 10px;
     margin-block:10px ;
     box-shadow: 0 0 3px var(--accent);
+    cursor: pointer;
 }
 
-.contect-section .contaner .box3 div:hover {
+.contect-section .contaner .box3 a div:hover {
     border: 1px solid var(--c-bg);
     box-shadow: none;
 }
-.contect-section .contaner .box3 div i {
+
+.contect-section .contaner .box3 a div i {
     color: var(--c-bg);
     font-weight: 600;
     font-size: 20px;
 }
-.contect-section .contaner .box3 div a {
-    text-decoration: none;
-    font-size: 14px;
-    color: var(--secondry-color);
-}
+
 
 .contect-section .contaner .box4 {
     background-color: var(--card);
