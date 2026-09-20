@@ -631,7 +631,7 @@ section {
     font-size: 14px;
     color: var(--secondry-color);
     cursor: pointer;
-    padding-block: 5px;
+    padding-block: 3px;
 }
 
 .contect-section .contaner .box4 {
