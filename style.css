@@ -631,6 +631,7 @@ section {
     font-size: 14px;
     color: var(--secondry-color);
     cursor: pointer;
+    padding-block: 5px;
 }
 
 .contect-section .contaner .box4 {
@@ -638,6 +639,10 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 3px var(--accent);
     padding: 20px;
+}
+.contect-section .contaner .box4 h2{
+    text-align: center;
+    margin-block:5px ;
 }
 .contect-section .contaner .box4:hover {
     border: 1px solid var(--c-bg);
